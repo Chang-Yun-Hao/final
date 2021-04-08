@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/cd611e0502.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+  /*header_index*/
+  .page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .head {
+    display: flex;
+    background-color: #6C6C6C;
+    width: 1200px;
+  }
+
+
+  .head_menu {
+    display: flex;
+    text-align: center;
+    align-items: center;
+
+  }
+
+  .head_link {
+    padding: 0 30px 0 30px;
+    letter-spacing: 3px;
+    border-radius: 5px;
+    font-size: 20pt;
+  }
+
+  .link {
+    color: white;
+
+    text-decoration: none;
+  }
+
+  .link:hover {
+    text-decoration: underline white 3px;
+  }
+
+  .head_icon {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 350px;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    width: 1200px;
+  }
+
+
+  .text_1 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    letter-spacing: 20px;
+    font-size: 50pt;
+    font-weight: bolder;
+  }
+
+  .btn {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: white;
+    border: none;
+    font-size: 30pt;
+    font-family: Show fantasy font;
+    font-weight: bolder;
+    text-decoration: underline;
+    width: 300px;
+  }
+
+  .container .btn:hover {
+    background-color: gray;
+  }
+
+  /*側邊選單*/
+  .stay-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 3;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  html,
+  body {
+    height: auto;
+  }
+
+  .side-menu {
+    width: 300px;
+    height: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 0px 10px gray;
+    position: relative;
+
+    /*被移動出去*/
+    transform: translate(-100%);
+  }
+
+  .side-menu form {
+    display: flex;
+    margin: 0 30px 50px;
+    border-radius: 100px;
+    border: 3px solid white;
+
+  }
+
+  .side-menu form input,
+  .side-menu form button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+  }
+
+  .side-menu form input {
+    width: 230px;
+  }
+
+  .side-menu form button {
+    width: 50px;
+  }
+
+  .side-menu form input:focus,
+  .side-menu form button:focus {
+    outline: none;
+
+  }
+
+  .side-menu label {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    color: white;
+    background-color: black;
+    border-radius: 0 10px 10px 0;
+
+
+    /*絕對定位垂直置中*/
+    right: -40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+
+    /*整個選單移動動畫*/
+    transition: .5s;
+  }
+
+  /*check box 被消失*/
+  #side-menu-switch {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  /*menu移動進來*/
+  #side-menu-switch:checked+.side-menu {
+    transform: translateX(0);
+  }
+
+  /*箭頭動畫*/
+  #side-menu-switch:checked+.side-menu label .fa-angle-right {
+    transform: scale(-1);
+  }
+
+  .nav a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+  }
+
+  /*白線位置*/
+  .nav li+li a::before {
+    content: '';
+    position: absolute;
+    border-bottom: white 2px solid;
+    left: 5px;
+    right: 20px;
+    top: 0;
+  }
+</style>
+
+<body>
+  <div class="page">
+    <!--header_home-->
+    <div class="head">
+
+      <div class="head_logo">
+        <a href="index.html"><img src="images/logo.png" title="首頁"></a>
+      </div>
+
+      <div class="head_menu">
+        <div class="head_link">
+          <a href="store_1.html" class="link" style="border-right: 1px #B2ACAC solid">進入賣場</a>
+          <a href="class.html" class="link" style="border-right: 1px #B2ACAC solid">安駕小教室</a>
+          <a href="about.html" class="link">關於我們</a>
+        </div>
+      </div>
+
+      <div class="head_icon">
+        <a href="singin&register.html"><img src="images/會員_ok.png" title="會員登入"></a>
+        <a href="shopping-cart.html"><img src="images/購物車_ok.png" title="購物車"></a>
+      </div>
+
+    </div>
+
+    <!--首頁-->
+    <div class="container">
+
+      <img src="images/home_2.jpg" style="width: 1200px;">
+
+
+      <div class="text_1">
+        <p>帽裂頭不裂</p>
+      </div>
+
+      <div class="btn">
+        <button class="btn" onclick="location.href='store_1.html'" title="點擊進入賣場">SHOP NOW</button>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!--側邊欄開始-->
+  <div class="stay-left">
+
+    <input type="checkbox" id="side-menu-switch">
+
+    <div class="side-menu">
+      <form>
+        <input type="search" placeholder="請輸入關鍵字">
+        <button><i class="fas fa-search"></i></button>
+      </form>
+
+      <ul class="nav">
+
+        <ul>
+          <h2>3/4款</h2>
+          <li><a href="#">01</a></li>
+          <li><a href="#">02</a></li>
+          <li><a href="#">03</a></li>
+        </ul>
+
+        <ul>
+          <h2>全罩式</h2>
+          <li><a href="#">01</a></li>
+          <li><a href="#">02</a></li>
+          <li><a href="#">03</a></li>
+        </ul>
+
+        <ul>
+          <h2>騎士配件</h2>
+          <li><a href="#">01</a></li>
+          <li><a href="#">02</a></li>
+          <li><a href="#">03</a></li>
+        </ul>
+
+      </ul>
+
+      <label for="side-menu-switch">
+        <i class="fas fa-angle-right"></i>
+      </label>
+    </div>
+  </div>
+  <!--側邊欄結束-->
+
+
+</body>
+
+</html>

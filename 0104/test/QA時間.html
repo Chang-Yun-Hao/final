@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /*Q&A*/
+  .accordion {
+    color: black;
+    background-color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 50px;
+
+    transition: 0.4s;
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: lightgray;
+    overflow: hidden;
+    font-size: 30px;
+  }
+
+  .active,
+  .accordion:hover {
+    background-color: lightgray;
+  }
+</style>
+
+<body>
+  <!--QA時間 開始-->
+
+  <div>
+    <button class="accordion">Q1 :安全帽尺寸怎麼挑？</button>
+    <div class="panel">
+
+      <img src="/images/class_1.jpg" style="width: 50%;">
+      <p>安全帽的尺寸不只會影響包覆性，也會影響舒適度和安全性。尺寸過大，代表安全帽與頭部之間留有空隙，無法提供完整的防護性；尺寸過小則會造成頭部不適。
+
+        影響安全帽包覆性的主要因素有三個：帽體大小，保麗龍大小以及內襯厚度。
+
+
+        因為三者通常是配對好的，所以在大部份情況下，前兩項可以忽略，只需要注意內襯厚度即可。
+        如下圖AF-1尺寸表
+
+        在選擇內襯前，我們需要知道兩個小知識
+        ① 內襯分為「頭襯 (頭頂內襯)」及 「兩頰 (兩頰內襯) 」
+        ② 頭襯跟兩頰的尺寸是分開的，所以訂購時必須選擇各別的尺寸
+
+        接下來我們只需要做三件事
+        ① 測量自己的頭圍，如下圖範例
+        ② 從頭圍找出自己適合的頭襯尺寸
+        ③ 從尺寸表中，以自己的頭襯尺寸找出建議的兩頰尺寸。
+      </p>
+      <img src="/images/class_2.png" style="width: 50%;">
+
+    </div>
+
+    <button class="accordion">Q2 :為何不賣半罩安全帽 ?</button>
+    <div class="panel">
+      <p>
+        我們不能預知何時出車禍，但可以選擇發生車禍時如何將傷害降到最低，不同於汽車有較完整的保護，機車只能仰賴穿戴人身部品，其中最基本的就是安全帽。
+        許多人戴安全帽只是為了不被罰錢，而選擇最便宜的「瓜皮帽」，但這種安全帽保護性最低，一旦發生車禍，後果不堪設想。
+      </p>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/A3l9595ZkYU" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+    <button class="accordion">Q3 :如何挑選安全帽，怎麼挑最安全？</button>
+    <div class="panel">
+      <p>在尚未騎車上路前，我們先檢視自己準備好了沒，機車專屬的安全知識就從保護自己開始，那要如何保護自己呢？第一步就先從選擇合適的人身部品來保護自己的行車安全吧！</p>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ib0jMhEjk8k" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+  </div>
+
+  <!--QA時間 結束-->
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+
+
+</body>
+
+</html>

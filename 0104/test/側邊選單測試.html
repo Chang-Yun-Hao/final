@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/cd611e0502.js" crossorigin="anonymous"></script>
+</head>
+
+<style>
+  /*字型*/
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;600&display=swap');
+
+  /*側邊選單*/
+  .stay-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 3;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Noto Serif TC', serif;
+  }
+
+  html,
+  body {
+    height: auto;
+  }
+
+  .side-menu {
+    width: 300px;
+    height: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 0px 10px gray;
+    position: relative;
+
+
+    /*被移動出去*/
+    transform: translate(-100%);
+  }
+
+  .side-menu form {
+    display: flex;
+    margin: 0 30px 50px;
+    border-radius: 100px;
+    border: 3px solid white;
+
+  }
+
+  .side-menu form input,
+  .side-menu form button {
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+  }
+
+  .side-menu form input {
+    width: 230px;
+  }
+
+  .side-menu form button {
+    width: 50px;
+
+  }
+
+  .side-menu form input:focus,
+  .side-menu form button:focus {
+    outline: none;
+
+  }
+
+  .side-menu label {
+    position: absolute;
+    width: 40px;
+    height: 80px;
+    color: white;
+    background-color: black;
+    border-radius: 0 10px 10px 0;
+
+
+    /*絕對定位垂直置中*/
+    right: -40px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+
+    /*整個選單移動動畫*/
+    transition: .5s;
+  }
+
+  /*check box 被消失*/
+  #side-menu-switch {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  /*menu移動進來*/
+  #side-menu-switch:checked+.side-menu {
+    transform: translateX(0);
+  }
+
+  /*箭頭動畫*/
+  #side-menu-switch:checked+.side-menu label .fa-angle-right {
+    transform: scale(-1);
+  }
+
+  .nav a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+
+  }
+
+  /*白線位置*/
+  .nav li+li a::before {
+    content: '';
+    position: absolute;
+    border-bottom: white 2px solid;
+    left: 5px;
+    right: 20px;
+    top: 0;
+  }
+</style>
+
+<body>
+  <!--側邊欄開始-->
+  <div class="stay-left">
+
+    <input type="checkbox" id="side-menu-switch">
+
+    <div class="side-menu">
+      <form>
+        <input type="search" placeholder="請輸入關鍵字">
+        <button><i class="fas fa-search"></i></button>
+      </form>
+
+      <ul class="nav">
+
+        <ul>
+          <h2>AGV</h2>
+          <li><a href="/assets/products/K1.html">K1</a></li>
+          <li><a href="/assets/products/K3SV.html">K3SV</a></li>
+          <li><a href="/assets/products/K5.html">K5</a></li>
+          <li><a href="/assets/products/Pista GP RR.html">Pista GP RR</a></li>
+        </ul>
+
+        <ul>
+          <h2>SHOEI</h2>
+          <li><a href="/assets/products/x14.html">x14</a></li>
+          <li><a href="/assets/products/RF-1200.html">RF-1200</a></li>
+          <li><a href="/assets/products/GT-Air II.html">GT-Air II</a></li>
+        </ul>
+        <ul>
+          <h2>Shark</h2>
+          <li><a href="/assets/products/Skwal 2.html">Skwal 2</a></li>
+          <li><a href="/assets/products/Spartan.html">Spartan</a></li>
+          <li><a href="/assets/products/Race R Pro.html">Race R Pro</a></li>
+        </ul>
+        <ul>
+          <h2>SOL</h2>
+          <li><a href="/assets/products/SF-2.html">SF-2</a></li>
+          <li><a href="/assets/products/SF-3.html">SF-3</a></li>
+          <li><a href="/assets/products/SF-6.html">SF-6</a></li>
+          <li><a href="/assets/products/68SII.html">68SII</a></li>
+        </ul>
+
+        <ul>
+          <h2>騎士配件</h2>
+          <li><a href="/assets/products/recoder.html">行車紀錄器</a></li>
+          <li><a href="/assets/products/earphone.html">耳機</a></li>
+          <li><a href="/assets/products/raincoat.html">雨衣</a></li>
+        </ul>
+
+      </ul>
+
+      <label for="side-menu-switch">
+        <i class="fas fa-angle-right"></i>
+      </label>
+    </div>
+  </div>
+  <!--側邊欄結束-->
+
+
+</body>
+
+</html>
