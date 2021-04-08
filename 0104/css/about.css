@@ -1,0 +1,214 @@
+body {
+  margin: 0px;
+}
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  display: flex;
+  background-color: #6C6C6C;
+  position: fixed;
+  width: 1200px;
+  z-index: 3;
+}
+
+
+.head_menu {
+  display: flex;
+  text-align: center;
+  align-items: center;
+
+}
+
+.head_link {
+  padding: 0 30px 0 30px;
+  letter-spacing: 2px;
+  font-size: 20pt;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline white 3px;
+}
+
+.head_icon {
+  float: right;
+  margin-left: 400px;
+}
+
+.content {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  width: 1200px;
+  text-align: center;
+  color: white;
+  float: left;
+  background-color: gray;
+}
+
+
+/*關於我們*/
+.imglogo {
+  width: 50px;
+  height: 50px;
+  float: left;
+}
+
+.body {
+  width: 1200px;
+  height: auto;
+  margin-top: 150px;
+  margin-left: -102px;
+}
+
+.insideleft {
+  width: auto;
+  height: auto;
+  float: left;
+  position: relative;
+
+}
+
+.insideleft1 {
+  width: auto;
+  height: auto;
+  float: left;
+  position: absolute;
+  margin-top: 350px;
+  margin-left: 17px;
+
+}
+
+.insideright {
+  width: auto;
+  height: auto;
+  float: right;
+  position: relative;
+}
+
+.insideright1 {
+  width: auto;
+  height: auto;
+  float: right;
+  position: absolute;
+  margin-left: 650px;
+  margin-top: 350px;
+}
+
+
+.imgIG1 {
+  width: 50px;
+  height: 50px;
+  margin-top: 1px;
+  float: right;
+  position: relative;
+  z-index: 0;
+}
+
+.w1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.w11 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin-left: 80px;
+}
+
+.w2 {
+  text-align: center;
+  font-size: 20px;
+  left: 20px;
+}
+
+.signout {
+  font-size: 30px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  margin-left: 25px;
+  cursor: pointer;
+}
+
+/*<!--1/7有動過以下都有變動-->*/
+
+.photo-container-1 {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.photo-card {
+  margin: auto;
+  border: 5px dashed silver;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+
+
+.photo-card:hover {
+  border: 10px dashed gold;
+  border-radius: 30px;
+}
+
+.img-description {
+  color: black;
+  letter-spacing: 1px;
+  font-size: 18pt;
+  padding-top: 10px;
+}
+
+.img_sb {
+  width: 300px;
+  height: 300px;
+  border-radius: 360px;
+  margin-left: 80px;
+}
+
+.goods-name {
+  text-align: center;
+  margin-left: -25px;
+}
+
+.d4 {
+  width: 500px;
+  height: auto;
+  float: left;
+}
+
+
+
+.card {
+  width: 500px;
+  height: auto;
+  text-align: center;
+  transition: all 2s;
+}
+
+.front {
+  color: black;
+  width: 500px;
+  height: auto;
+  backface-visibility: hidden;
+}
+
+.card:hover {
+  transform: rotateY(360deg);
+}

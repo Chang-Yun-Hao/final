@@ -1,0 +1,196 @@
+/*內容的css*/
+.content {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box1 {
+  width: 1200px;
+  height: auto;
+}
+
+
+.insideleft {
+  /*裡面的排版*/
+  width: auto;
+  height: auto;
+  margin-top: 120px;
+}
+
+footer {
+  width: 1200px;
+  text-align: center;
+  color: white;
+  float: left;
+  background-color: gray;
+}
+
+/*文字css*/
+.h1_w {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.button_w {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.word {
+  /*內文文字：顏色選取*/
+  font-size: 30px;
+}
+
+.note_w {
+  font-size: 28px;
+
+}
+
+.word1 {
+  /*內文文字：價錢*/
+  font-size: 30px;
+  color: teal;
+}
+
+.word2 {
+  /*內文文字：產品說明*/
+  font-size: 30px;
+  text-align: center;
+}
+
+.star {
+  /*星星*/
+  color: gold;
+  margin-left: 50px;
+}
+
+.button_ddd {
+  /*按鈕+-的排版*/
+  margin-left: 10px;
+
+}
+
+.button_pay {
+  /*按鈕直接買的排版*/
+  margin-left: 50px;
+
+}
+
+.notebox {
+  width: 1100px;
+  height: auto;
+  text-align: center;
+  position: relative;
+  margin-left: 50PX;
+}
+
+/*留言板*/
+.msg {
+  margin: 20px 0;
+  min-height: 70px;
+  display: flex;
+}
+
+.msg_img {
+  min-width: 50px;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/sb.png);
+  background-position: center;
+  background-size: 100px;
+}
+
+.msg__body {
+  margin-left: 10px;
+}
+
+.msg__content {
+  margin-top: 10px;
+  max-width: 100%;
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.msg__author {
+  color: #5c9edc;
+  font-weight: bold;
+  font-size: 28px;
+  margin-left: 15px;
+}
+
+.msg__time {
+  color: #a0a0a0;
+  font-size: 28px;
+}
+
+/*彈跳視窗*/
+#modal {
+  display: none;
+}
+
+.modal {
+  margin-left: 300px;
+  width: 500px;
+  height: 500px;
+  z-index: 3;
+  /*cursor: pointer;*/
+}
+
+.modal img {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+  padding: 10px;
+  margin: auto;
+  max-width: 500px;
+  max-height: 500px;
+  box-shadow: 0 2px 6px rgb(0, 0, 0, 0.2), 0 10px 20px rgb(0, 0, 0, 0.2);
+  border-radius: 12px;
+  border: 1px solid black;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+.thum-img {
+  float: left;
+  width: 400px;
+  height: 400px;
+  margin-right: 50px;
+  float: left;
+}
+
+.modal,
+.thum-img {
+  cursor: pointer;
+}
+
+.box2 {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  margin-right: 50px;
+  float: left;
+  display: none;
+}
+
+div:target {
+  display: block;
+}
+
+.signout {
+  font-size: 30px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  margin-left: 25px;
+  cursor: pointer;
+}

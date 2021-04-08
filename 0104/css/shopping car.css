@@ -1,0 +1,162 @@
+ html,
+ body {
+   background-color: w
+ }
+
+ * {
+   font-family: 'Noto Serif TC', serif;
+
+ }
+
+ /*祐晨用的css*/
+ /*版面配置*/
+ .content {
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ .insideleft {
+   width: auto;
+   height: auto;
+ }
+
+ .textinside {
+   width: auto;
+   height: auto;
+   margin-left: 250px;
+   margin-right: 250px;
+   text-align: left;
+   padding: 20px;
+   background-color: white;
+ }
+
+ footer {
+   width: 1200px;
+   text-align: center;
+   color: white;
+   float: left;
+   background-color: gray;
+ }
+
+ /*圖片*/
+ .bgimg {
+   /*背景圖片*/
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 600px;
+   height: 300px;
+   border-radius: 90px;
+   margin-left: 300px;
+   padding: 20px;
+ }
+
+ .bgimg2 {
+   /*背景圖片*/
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 400px;
+   height: 270px;
+   border-radius: 90px;
+ }
+
+ .hr1 {
+   background-color: black;
+   width: auto;
+ }
+
+ .hr2 {
+   background-color: black;
+   width: auto;
+
+ }
+
+ .body_text {
+   /*登入/註冊分行*/
+   columns: 2;
+   column-rule: silver solid 1px;
+   position: relative;
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-top: 25px;
+   column-gap: 90px;
+ }
+
+ /*字形設定*/
+ .singin_w {
+   /*登入字型*/
+   font-size: 48px;
+   font-weight: bold;
+   font-style: oblique;
+ }
+
+ .e_w {
+   /*英文字*/
+   font-size: 30px;
+ }
+
+ .e_w_text {
+   /*text內文字*/
+   font-size: 30px;
+   text-align: center;
+ }
+
+ .e_w_text1 {
+   /*訂單編號文字*/
+   font-size: 25px;
+
+
+ }
+
+
+ .c_w {
+   font-size: 30px;
+   margin-left: 10px;
+ }
+
+ .h1_w {
+   font-size: 48px;
+   text-align: center;
+   margin-top: 100px;
+   /*有改*/
+ }
+
+ .c_w_text {
+   font-size: 20px;
+   text-align: center;
+ }
+
+ .c_w_text1 {
+   /*訂單編號*/
+   font-size: 25px;
+   margin-bottom: 10px;
+ }
+
+ th {
+   text-decoration: underline;
+   font-size: 35px;
+   text-align: center;
+ }
+
+ td {
+   font-size: 35px;
+   text-align: center;
+ }
+
+ .signout {
+   font-size: 30px;
+   outline: none;
+   background-color: transparent;
+   color: white;
+   margin-left: 25px;
+   cursor: pointer;
+
+ }
+
+ .pay-total {
+   float: right;
+   font-size: 25px;
+   margin-top: 100px;
+ }

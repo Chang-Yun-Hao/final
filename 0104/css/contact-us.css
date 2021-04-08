@@ -1,0 +1,54 @@
+/*聯絡我們*/
+.contact-txt {
+  color: black;
+  font-size: 30pt;
+  padding-bottom: 10px;
+}
+
+.contact-btn {
+  background-color: lightgray;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+}
+
+.contact-btn:hover {
+  background-color: black;
+  border: 1px solid lightgray;
+  color: lightgray;
+}
+
+.contact-container {
+  padding: 30px;
+  margin-top: 400px;
+}
+
+.contact-container label {
+  padding: 3px;
+  font-size: 20pt;
+}
+
+.contact-container input,
+.contact-container textarea {
+  width: 1098px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.signout {
+  font-size: 30px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  margin-left: 25px;
+  cursor: pointer;
+
+}

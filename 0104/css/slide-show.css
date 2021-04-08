@@ -1,0 +1,137 @@
+/*側邊選單*/
+.stay-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Noto Serif TC', serif;
+}
+
+html,
+body {
+  height: auto;
+  background-color: whitesmoke;
+}
+
+.side-menu {
+  width: 300px;
+  height: 100%;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 0px 10px gray;
+  position: relative;
+
+  /*被移動出去*/
+  transform: translate(-100%);
+}
+
+.side-menu form {
+  display: flex;
+  margin: 0 30px 50px;
+  border-radius: 100px;
+  border: 3px solid white;
+
+}
+
+.side-menu form input,
+.side-menu form button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+}
+
+.side-menu form input {
+  width: 230px;
+}
+
+.side-menu form button {
+  width: 50px;
+}
+
+.side-menu form input:focus,
+.side-menu form button:focus {
+  outline: none;
+
+}
+
+.side-menu label {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  color: white;
+  background-color: black;
+  border-radius: 0 10px 10px 0;
+
+
+  /*絕對定位垂直置中*/
+  right: -40px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  line-height: 80px;
+  text-align: center;
+  font-size: 30px;
+
+  /*整個選單移動動畫*/
+  transition: .5s;
+}
+
+/*check box 被消失*/
+#side-menu-switch {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+/*menu移動進來*/
+#side-menu-switch:checked+.side-menu {
+  transform: translateX(0);
+}
+
+/*箭頭動畫*/
+#side-menu-switch:checked+.side-menu label .fa-angle-right {
+  transform: scale(-1);
+}
+
+.stay-left .nav {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.nav a {
+  display: block;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  position: relative;
+
+}
+
+/*白線位置*/
+.nav li+li a::before {
+  content: '';
+  position: absolute;
+  border-bottom: white 2px solid;
+  left: 5px;
+  right: 20px;
+  top: 0;
+}
+
+.nav a:hover {
+  /*改*/
+  color: #984B4B;
+  text-decoration: underline;
+}

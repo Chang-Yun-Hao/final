@@ -1,0 +1,50 @@
+/*Q&A*/
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.accordion {
+  width: 1200px;
+  color: black;
+  background-color: whitesmoke;
+  cursor: pointer;
+  padding: 18px;
+
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  text-align: left;
+  transition: 0.4s;
+}
+
+
+.panel {
+  display: none;
+  background-color: lightgray;
+  overflow: hidden;
+  font-size: 25px;
+  width: 1200px;
+}
+
+.panel iframe {
+  margin: 10px 50px 10px 50px;
+}
+
+.active,
+.accordion:hover {
+  background-color: lightgray;
+}
+
+.signout {
+  font-size: 30px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  margin-left: 25px;
+  cursor: pointer;
+
+}

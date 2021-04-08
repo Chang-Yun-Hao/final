@@ -1,0 +1,140 @@
+body {
+  margin: 0px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  display: flex;
+  background-color: #6C6C6C;
+  width: 1200px;
+  position: fixed;
+}
+
+
+.head_menu {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.head_link {
+  padding: 0 30px 0 30px;
+  letter-spacing: 2px;
+  font-size: 20pt;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline white 3px;
+}
+
+
+.head_icon {
+  float: right;
+  margin-left: 400px;
+}
+
+.content {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  width: 1200px;
+  text-align: center;
+  color: white;
+  float: left;
+  background-color: gray;
+}
+
+.pay-bill-main {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.pay-txt {
+  color: black;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 48px;
+}
+
+.back-btn {
+  color: black;
+  margin-bottom: 3px;
+}
+
+.pay-goods {
+  text-align: center;
+  margin-top: 20px;
+  border-bottom: 1px solid lightslategrey;
+}
+
+.pay-t1 {
+  width: 500px;
+}
+
+.pay-t2 {
+  width: 250px;
+}
+
+.pay-t3 {
+  width: 250px;
+}
+
+.pay-t4 {
+  width: 200px;
+}
+
+.pay-ways {
+  font-size: 10px;
+  padding: 10px;
+}
+
+.way1 {
+  display: flex;
+  margin: 10px 0 10px 0;
+}
+
+.way2 {
+  display: flex;
+  margin: 10px 0 10px 0;
+
+}
+
+.location {
+  display: flex;
+  margin: 10px 0 10px 0;
+
+}
+
+.pay-total {
+  float: right;
+  font-size: 25px;
+}
+
+.pay-btn {
+  margin: 5px;
+  float: right;
+  width: 100px;
+}
+
+.signout {
+  font-size: 30px;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  margin-left: 25px;
+  cursor: pointer;
+
+}

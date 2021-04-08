@@ -1,0 +1,350 @@
+ html,
+ body {
+   background-color: whitesmoke;
+ }
+
+ .page {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .head {
+   display: flex;
+   background-color: #6C6C6C;
+   width: 1200px;
+ }
+
+
+ .head_menu {
+   display: flex;
+   text-align: center;
+   align-items: center;
+ }
+
+ .head_link {
+   padding: 0 30px 0 30px;
+   letter-spacing: 2px;
+   font-size: 20pt;
+ }
+
+ .link {
+   color: white;
+   text-decoration: none;
+ }
+
+ .link:hover {
+   text-decoration: underline white 3px;
+ }
+
+ .head_icon {
+   float: right;
+   margin-left: 400px;
+ }
+
+
+ /*祐晨用的css*/
+ /*版面配置*/
+ .content {
+   width: 1200px;
+   margin-left: auto;
+   margin-right: auto;
+
+ }
+
+ .insideleft {
+   width: auto;
+   height: auto;
+   background-color: rgba(208, 213, 199, 0.796);
+ }
+
+ .textinside {
+   width: auto;
+   height: auto;
+   margin-left: 250px;
+   margin-right: 250px;
+   text-align: left;
+   padding: 20px;
+   background-color: white;
+ }
+
+ footer {
+   width: 1200px;
+   text-align: center;
+
+   color: white;
+   float: left;
+   background-color: gray;
+ }
+
+ /*圖片*/
+ .bgimg {
+   /*背景圖片*/
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 600px;
+   height: 300px;
+   border-radius: 90px;
+   margin-left: 300px;
+   padding: 20px;
+ }
+
+ .bgimg2 {
+   /*背景圖片*/
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 400px;
+   height: 270px;
+   border-radius: 90px;
+ }
+
+ hr {
+   background-color: black;
+   width: 1000px;
+ }
+
+ .body_text {
+   /*登入/註冊分行*/
+   columns: 2;
+   column-rule: silver solid 1px;
+   position: relative;
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-top: 25px;
+   column-gap: 90px;
+ }
+
+ /*字形設定*/
+ .singin_w {
+   /*登入字型*/
+   font-size: 48px;
+   font-weight: bold;
+
+   font-style: oblique;
+ }
+
+ .e_w {
+   /*英文字*/
+
+   font-size: 30px;
+   margin-left: 10px;
+ }
+
+ .e_w_text {
+   /*text內文字*/
+
+   font-size: 30px;
+   text-align: center;
+ }
+
+ .c_w {
+   text-decoration: none;
+   font-size: 30px;
+   margin-left: 10px;
+ }
+
+ .h1_w {
+
+   font-size: 48px;
+   text-align: center;
+ }
+
+ .c_w_text {
+
+   font-size: 20px;
+   text-align: center;
+ }
+
+ .signout {
+   font-size: 30px;
+   outline: none;
+   background-color: transparent;
+   color: white;
+   margin-left: 25px;
+   cursor: pointer;
+ }
+
+ /*文字css*/
+ .h1_w {
+   font-size: 36px;
+   font-weight: bold;
+ }
+
+ .button_w {
+   font-size: 30px;
+   text-align: center;
+   margin-top: 20px;
+ }
+
+ .word {
+   /*內文文字：顏色選取*/
+   font-size: 30px;
+ }
+
+ .note_w {
+   font-size: 28px;
+
+ }
+
+ .word1 {
+   /*內文文字：價錢*/
+   font-size: 30px;
+   color: teal;
+ }
+
+ .word2 {
+   /*內文文字：產品說明*/
+   font-size: 30px;
+   text-align: center;
+ }
+
+ .star {
+   /*星星*/
+   color: gold;
+   margin-left: 50px;
+ }
+
+ .button_ddd {
+   /*按鈕+-的排版*/
+   margin-left: 10px;
+
+ }
+
+ .button_pay {
+   /*按鈕直接買的排版*/
+   margin-left: 50px;
+
+ }
+
+ .notebox {
+   width: 1100px;
+   height: 700px;
+   text-align: center;
+   position: relative;
+   margin-left: 50PX;
+ }
+
+ /*留言板*/
+ .msg {
+   margin: 20px 0;
+   min-height: 70px;
+   display: flex;
+ }
+
+ .msg_img {
+  min-width: 50px;
+  width: 100px;
+  height: 100px;
+  background-image: url(../images/sb.png);
+  background-position: center;
+  background-size: 100px;
+ }
+
+ .msg__body {
+   margin-left: 10px;
+ }
+
+ .msg__content {
+   margin-top: 10px;
+   max-width: 100%;
+   font-size: 18px;
+   margin-left: 15px;
+ }
+
+ .msg__author {
+   color: #5c9edc;
+   font-weight: bold;
+   font-size: 28px;
+   margin-left: 15px;
+ }
+
+ .msg__time {
+   color: #a0a0a0;
+   font-size: 28px;
+ }
+
+ /*彈跳視窗*/
+ #modal {
+   display: none;
+ }
+
+ .modal {
+   margin-left: 300px;
+   width: 500px;
+   height: 500px;
+   z-index: 3;
+   /*cursor: pointer;*/
+ }
+
+ .modal img {
+   animation-name: zoom;
+   animation-duration: 0.6s;
+   padding: 10px;
+   margin: auto;
+   max-width: 500px;
+   max-height: 500px;
+   box-shadow: 0 2px 6px rgb(0, 0, 0, 0.2), 0 10px 20px rgb(0, 0, 0, 0.2);
+   border-radius: 12px;
+   border: 1px solid black;
+ }
+
+ @keyframes zoom {
+   from {
+     transform: scale(0.1)
+   }
+
+   to {
+     transform: scale(1)
+   }
+ }
+
+ .thum-img {
+   float: left;
+   width: 400px;
+   height: 400px;
+   margin-right: 50px;
+   float: left;
+ }
+
+ .modal,
+ .thum-img {
+   cursor: pointer;
+ }
+
+ .box2 {
+   width: 400px;
+   height: 400px;
+   position: absolute;
+   margin-right: 50px;
+   float: left;
+   display: none;
+ }
+
+ div:target {
+   display: block;
+ }
+
+
+ .pay-goods {
+   text-align: center;
+   margin-top: 20px;
+   border-bottom: 1px solid lightslategrey;
+ }
+
+ .pay-t1 {
+   width: 500px;
+ }
+
+ .pay-t2 {
+   width: 250px;
+ }
+
+ .pay-t3 {
+   width: 250px;
+ }
+
+ .pay-t4 {
+   width: 200px;
+ }
